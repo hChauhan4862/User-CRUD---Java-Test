@@ -1,7 +1,6 @@
 package com.keenable.assignment1.keenable_hc.controller;
 
 import com.keenable.assignment1.keenable_hc.model.User;
-import com.keenable.assignment1.keenable_hc.model.UserBulkUploadRequest;
 import com.keenable.assignment1.keenable_hc.model.UserUpdateRequest;
 import com.keenable.assignment1.keenable_hc.model.UserValidateRequest;
 import com.keenable.assignment1.keenable_hc.service.UserService;
@@ -21,7 +20,7 @@ import java.util.Optional;
 
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:8080")
 @RequestMapping("/api/users")
 public class UserController {
 
